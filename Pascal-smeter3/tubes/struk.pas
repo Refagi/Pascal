@@ -7,12 +7,11 @@ const
 type 
   dataUser = record
     tanggal: TDateTime;
-    formatTanggal, alamat: string;
-    nama: string;
+    formatTanggal, alamat: string[15];
+    nama: string[10];
     harga, jumlah: array[1..count] of real;
     pcs: array[1..count] of integer;
     totalHarga: real;
-    nomer: string;
     barang: array[1..count] of string;
 end;
 
